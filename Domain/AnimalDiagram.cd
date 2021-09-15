@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Domain.Animal">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABgAAQAAEBAAAQAAQAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Animal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Animals.Bird">
+    <Position X="2" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAABAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Bird.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Animals.Cat">
+    <Position X="6.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Animals\Cat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Animals.Dog">
+    <Position X="11" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Animals\Dog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Animals.Fish">
+    <Position X="4.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAABAAAAAAAAAQAA=</HashCode>
+      <FileName>Animals\Fish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Animals.Rabbit">
+    <Position X="8.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAACAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Rabbit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
