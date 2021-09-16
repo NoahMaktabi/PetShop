@@ -18,7 +18,9 @@ namespace Presentation.MenuAssembly
 
         private void DisplayOptions()
         {
-            Console.WriteLine(_prompt);
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(_prompt + "\n");
             for (var i = 0; i < _options.Length; i++)
             {
                 var currentOption = _options[i];

@@ -58,9 +58,13 @@ namespace Presentation.MenuAssembly
             }
 
             Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             var sell = InputHandler.GetBoolValue("Do you want to sell a pet?", false);
-            if (!sell) return;
+            if (!sell)
+            {
+                Console.ResetColor();
+                return;
+            }
 
             var minId = animalList.Min(m => m.AnimalId);
             var maxId = animalList.Max(m => m.AnimalId);
