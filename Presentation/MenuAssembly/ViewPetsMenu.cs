@@ -6,6 +6,12 @@ using Domain.Animals;
 using Domain;
 using Presentation.Interfaces;
 
+/*
+ * This class has members marked as protected as they are needed in another derived class.
+ * It has even a virtual method that gets overriden by the derived class. 
+ */
+
+
 namespace Presentation.MenuAssembly
 {
     public class ViewPetsMenu

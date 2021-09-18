@@ -16,6 +16,10 @@ namespace Presentation.MenuAssembly
             _animalShop = animalShop;
         }
 
+        /// <summary>
+        /// Runs the Buy pets menu. returns false if the user chooses to return to main menu.
+        /// </summary>
+        /// <returns>True while the user uses the menu. False when the user want to return to main menu.</returns>
         public bool Run()
         {
             const string prompt = "Select which kind of pet you want to purchase";
@@ -51,6 +55,18 @@ namespace Presentation.MenuAssembly
             return false;
         }
 
+
+
+        #region GetsAnimalInfo
+
+        
+
+        
+        /// <summary>
+        /// Gets animal details from the user. The method gets the details that all animals share.
+        /// The method creates a new Id for the new Animal. 
+        /// </summary>
+        /// <returns>Returns an Animal created from the details supplied by the user</returns>
         private Animal GetAnimalDetails()
         {
             var lastAnimal = _animalShop.AnimalsInStock.LastOrDefault();
@@ -170,5 +186,7 @@ namespace Presentation.MenuAssembly
             };
             return rabbit;
         }
+
+        #endregion
     }
 }

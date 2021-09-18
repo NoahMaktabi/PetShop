@@ -1,8 +1,22 @@
 ﻿using System;
 
+/*
+ * This class is designed to contain helper methods to be used by other classes.
+ * The class is static and cannot be instantiated, all methods are also static. 
+ * GetAge() asks the user for age and then parse it into int.
+ * GetId() asks the user to provide the Id of the animal that is being sold. 
+ * GetString() asks the user for a string input provided a predicate. 
+ * GetBoolValue() gets a bool value from user via a Y or N question. The user should provide a message to be presented to the user. 
+ * GetCapitalInfoFromUser() gets capital info from the user that is then saved into Capital in AnimalShop. The capital is parsed into decimal. 
+ * GetDecimalFromUserInput() gets price info from user. The price is parsed into decimal.
+ *
+ */
+
+
+
 namespace Presentation
 {
-    public class InputHandler 
+    public static class InputHandler 
     {
         public static int GetAge()
         {
@@ -64,6 +78,9 @@ namespace Presentation
 
         public static decimal GetCapitalInfoFromUser()
         {
+#pragma warning disable CA1416 // Validate platform compatibility
+            Console.WindowHeight = 50;
+#pragma warning restore CA1416 // Validate platform compatibility
             const string msgToUser = "PetShop program har started...\nEnter your start capital to proceed to shop.\nMinimum is 10000 kr";
             var invalidMsg = "You did not enter a number or the number is less than 10000";
             var capital = InputHandler.GetDecimalFromUserInput(msgToUser, invalidMsg, 10000, decimal.MaxValue);

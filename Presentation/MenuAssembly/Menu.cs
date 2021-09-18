@@ -1,6 +1,14 @@
 ﻿using System;
 using Presentation.Interfaces;
 
+/*
+ * This is the class that is responsible for designing and creating the menu that is presented to the user.
+ * The class has a constructor that accepts values to be used in the Run method. 
+ * The first value is prompt which is the message that is presented to the user before the menu itself. 
+ * Then we have options which is a string[] that contains the options that the menu should have. 
+ */
+
+
 namespace Presentation.MenuAssembly
 {
     public class Menu : IMenu
@@ -16,6 +24,10 @@ namespace Presentation.MenuAssembly
             _selectedIndex = 0;
         }
 
+
+        /// <summary>
+        /// Runs the menu with a specific design. 
+        /// </summary>
         private void DisplayOptions()
         {
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
@@ -42,6 +54,11 @@ namespace Presentation.MenuAssembly
             Console.ResetColor();
         }
 
+        /// <summary>
+        /// Responsible for presenting the menu and looping until the user presses enter on an option.
+        /// The menu then returns the selected option as an int representing the selectedIndex of the options array. 
+        /// </summary>
+        /// <returns>int representing the selectedIndex of the options array.</returns>
         public int Run()
         {
             ConsoleKey keyPressed;
