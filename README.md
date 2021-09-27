@@ -5,13 +5,13 @@ The solution is divided into 3 layers as it applies the clean architecture desig
 <h1>Layers:</h1>
 
 <h3>1- Domain:</h3>
-Kind: C# Class Library
+Project type: C# Class Library
 The Domain layer contains the definition of the objects (animals) that the app uses. 
 Here we only define the shape of the Animal class and the classes that inherit from Animal.
 The Domain layer has no dependencies. 
 
 <h3>2- Application:</h3>
-Kind: C# Class Library
+Project type: C# Class Library
 The Application layer contains the business logic for the app. The idea is that we can use the Domain and Application layer with any kind of project, 
 so those are constants when the Presentation can change. It can be swapped with WPF, MVC etc... 
 The business logic for this app is in the AnimalShop:
@@ -25,7 +25,7 @@ The Application layer has a dependency on Domain.
 
 
 <h3>3- Presentation:</h3>
-Kind: C# Console App.
+Project type: C# Console App.
 Here we create a Menu class inside MenuAssembly folder. In this class a modern menu is defined. 
 The menu will only allow for selections via pressing up or down arrows. The user won't be able to type input unless it's necessary. 
 This menu is then called by MenuRunner. 
